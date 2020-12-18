@@ -10,9 +10,9 @@ export default new Vuex.Store({
   state: {
     title: "Hello from store!"
   },
-  getters(){
-      title(state){
-          return state.title + "!!!!"
-      }
+  getters: {
+    title() {
+      return this.title + "!!!!";
+    }
   }
 });
